@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 0c3c30c0021c62c499b2de7948f12c9e
+timeCreated: 1428252909
+licenseType: Pro
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - newSprite: {fileID: 21300000, guid: 82d9c4238d794ae448760ed19118fa46, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

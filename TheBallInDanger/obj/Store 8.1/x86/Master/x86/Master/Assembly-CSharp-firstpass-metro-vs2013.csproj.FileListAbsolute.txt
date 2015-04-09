@@ -1,0 +1,17 @@
+C:\Users\badar\Documents\Test\bin\Store 8.1\x86\Master\Assembly-CSharp-firstpass.dll
+C:\Users\badar\Documents\Test\bin\Store 8.1\x86\Master\Assembly-CSharp-firstpass.pdb
+C:\Users\badar\Documents\Test\bin\Store 8.1\x86\Master\Assembly-CSharp-firstpass.pri
+C:\Users\badar\Documents\Test\obj\Store 8.1\x86\Master\x86\Master\Assembly-CSharp-firstpass-metro-vs2013.csprojResolveAssemblyReference.cache
+C:\Users\badar\Documents\Test\obj\Store 8.1\x86\Master\x86\Master\Assembly-CSharp-firstpass.dll
+C:\Users\badar\Documents\Test\obj\Store 8.1\x86\Master\x86\Master\Assembly-CSharp-firstpass.pdb
+C:\Users\badar\Documents\Test\obj\Store 8.1\x86\Master\x86\Master\priconfig.xml
+C:\Users\badar\Documents\Test\obj\Store 8.1\x86\Master\x86\Master\priconfig.xml.intermediate
+C:\Users\badar\Documents\Test\obj\Store 8.1\x86\Master\x86\Master\layout.resfiles
+C:\Users\badar\Documents\Test\obj\Store 8.1\x86\Master\x86\Master\layout.resfiles.intermediate
+C:\Users\badar\Documents\Test\obj\Store 8.1\x86\Master\x86\Master\resources.resfiles
+C:\Users\badar\Documents\Test\obj\Store 8.1\x86\Master\x86\Master\resources.resfiles.intermediate
+C:\Users\badar\Documents\Test\obj\Store 8.1\x86\Master\x86\Master\pri.resfiles
+C:\Users\badar\Documents\Test\obj\Store 8.1\x86\Master\x86\Master\pri.resfiles.intermediate
+C:\Users\badar\Documents\Test\obj\Store 8.1\x86\Master\x86\Master\qualifiers.txt
+C:\Users\badar\Documents\Test\obj\Store 8.1\x86\Master\x86\Master\qualifiers.txt.intermediate
+C:\Users\badar\Documents\Test\obj\Store 8.1\x86\Master\x86\Master\MultipleQualifiersPerDimensionFound.txt
