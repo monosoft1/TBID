@@ -24,6 +24,9 @@ TagManager:
   - Volume
   - VolumeHover
   - Music
+  - Check1
+  - Check2
+  - Check3
   layers:
   - Default
   - TransparentFX

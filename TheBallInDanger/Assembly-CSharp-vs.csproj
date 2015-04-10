@@ -76,6 +76,7 @@
      <Compile Include="Assets\Scripts\Player\ColourC.cs" />
      <Compile Include="Assets\Scripts\Player\HoldPlayer.cs" />
      <Compile Include="Assets\Scripts\Player\MaterialChanger.cs" />
+     <Compile Include="Assets\Scripts\Player\TouchingJump.cs" />
      <Compile Include="Assets\Scripts\Tiles\T3Manager.cs" />
      <Compile Include="Assets\Scripts\Tiles\TManager.cs" />
      <Compile Include="Assets\Scripts\UI\GamePause\MainMenu\LoadMainMenu.cs" />
