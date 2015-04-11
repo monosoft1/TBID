@@ -93,6 +93,11 @@
      <Compile Include="Assets\Scripts\UI\Menu\WebsiteLink.cs" />
      <Compile Include="Assets\Scripts\UI\TextManagers\lvltxtManager.cs" />
      <Compile Include="Assets\Scripts\UI\Volume\AudioImageChange.cs" />
+     <Compile Include="Assets\Scripts\UI\Volume\VolumeAdjust.cs" />
+     <Compile Include="Assets\Touch Screen Slider\Assets\Scripts\Button.cs" />
+     <Compile Include="Assets\Touch Screen Slider\Assets\Scripts\MusicManager.cs" />
+     <Compile Include="Assets\Touch Screen Slider\Assets\Scripts\Slider.cs" />
+     <Compile Include="Assets\Touch Screen Slider\Assets\Scripts\TouchInput.cs" />
      <Compile Include="Assets\UniityStuffs\SampleAssets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
      <Compile Include="Assets\UniityStuffs\SampleAssets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" />
      <Compile Include="Assets\UniityStuffs\SampleAssets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs" />

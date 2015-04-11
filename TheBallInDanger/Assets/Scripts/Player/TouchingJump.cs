@@ -1,25 +1,29 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using UnityEngine.EventSystems;
 using System.Collections;
 
-public class TouchingJump : MonoBehaviour {
+public class TouchingJump : MonoBehaviour
+{		
+	public static TouchingJump control;
 
-	[SerializeField] public bool isFalling = false;
-	private Rigidbody m_Rigidbody;
+	public float m_JumpPower = 7;
+	public Rigidbody player;
+    public static bool isFalling = false;
 
-	// Update is called once per frame
-	public void OnPointerUp() 
+	public void Start()
 	{
-		m_Rigidbody = GameObject.FindGameObjectWithTag ("Player").GetComponent<Rigidbody>();
+		player = GameObject.FindGameObjectWithTag ("Player").GetComponent<Rigidbody>();
+	}
 
-		if (isFalling == false)
+    public void Jumpit()
+	{
+		if (isFalling == false) 
 		{
-			m_Rigidbody.AddForce(Vector3.up * 7, ForceMode.Impulse);
+			player.AddForce(Vector3.up * m_JumpPower, ForceMode.Impulse);
+			isFalling = true;
 		}
-		isFalling = true;
+
 	}
 
-	public void OnCollisionStay ()
-	{
-		isFalling = false;	
-	}
 }

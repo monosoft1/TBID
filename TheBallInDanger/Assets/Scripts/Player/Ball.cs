@@ -5,6 +5,8 @@ namespace UnityStandardAssets.Vehicles.Ball
 {
 	public class Ball : MonoBehaviour
     {
+
+
         [SerializeField] public float m_MovePower = 5; // The force added to the ball to move it.
         [SerializeField] private bool m_UseTorque = true; // Whether or not to use torque to move the ball.
         [SerializeField] private float m_MaxAngularVelocity = 25; // The maximum velocity the ball can rotate at.
@@ -18,9 +20,9 @@ namespace UnityStandardAssets.Vehicles.Ball
 
         private void Start()
         {
-            m_Rigidbody = GetComponent<Rigidbody>();
+			m_Rigidbody = GameObject.FindGameObjectWithTag ("Player").GetComponent<Rigidbody>();
             // Set the maximum angular velocity.
-            GetComponent<Rigidbody>().maxAngularVelocity = m_MaxAngularVelocity;
+           GameObject.FindGameObjectWithTag ("Player").GetComponent<Rigidbody>().maxAngularVelocity = m_MaxAngularVelocity;
         }
 
 
@@ -64,6 +66,7 @@ namespace UnityStandardAssets.Vehicles.Ball
 		public void OnCollisionStay ()
 		{
 			isFalling = false;
+			TouchingJump.isFalling = false;
 		}
     }
 }
