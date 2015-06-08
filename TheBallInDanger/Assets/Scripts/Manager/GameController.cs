@@ -46,6 +46,10 @@ public class GameController : MonoBehaviour {
 			{
 				shouldStoreData = false;
 			} 
+			else if (Application.loadedLevelName == "AudioSettings") 
+			{
+				shouldStoreData = false;
+			} 
 			else 
 			{
 				shouldStoreData = true;
@@ -74,6 +78,10 @@ public class GameController : MonoBehaviour {
 			shouldStoreData = false;
 		} 
 		else if (Application.loadedLevelName == "Help") 
+		{
+			shouldStoreData = false;
+		} 
+		else if (Application.loadedLevelName == "AudioSettings") 
 		{
 			shouldStoreData = false;
 		} 
