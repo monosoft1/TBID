@@ -29,15 +29,20 @@ public class PlayerMaterialController : MonoBehaviour {
 
 	void Start () 
 	{
-		ballMaterial = ballDefault;
-		ballDefault = GameController.control.ballDefault;
-
+		if(GameObject.FindGameObjectWithTag ("GameMManager").activeSelf)
+		{
+			ballMaterial = ballDefault;
+			ballDefault = GameController.control.ballDefault;
+		}
 	}
 	
 	void Update () 
 	{
-		player = GameObject.FindGameObjectWithTag ("Player");
-		player.GetComponent<Renderer>().material = ballMaterial;
+		if(player == null && GameObject.FindGameObjectWithTag ("Player") && GameObject.FindGameObjectWithTag ("GameMManager").activeSelf)
+		{
+			player = GameObject.FindGameObjectWithTag ("Player");
+			player.GetComponent<Renderer>().material = ballMaterial;
+		}
 
 		if (ballMaterial.name == "BallC") 
 		{

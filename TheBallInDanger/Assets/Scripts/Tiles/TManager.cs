@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class TManager : MonoBehaviour {
 
@@ -11,7 +12,6 @@ public class TManager : MonoBehaviour {
 		   {
 			  GetComponent<Rigidbody>().useGravity = true;
 			  GetComponent<Rigidbody>().isKinematic = false;
-			  
 		   }
 	}
 	

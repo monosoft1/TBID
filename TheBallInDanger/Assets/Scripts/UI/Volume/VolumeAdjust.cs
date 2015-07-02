@@ -1,17 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class VolumeAdjust : MonoBehaviour {
 
-	public int volume;
-
-	void Update()
+	public AudioMixer masterMixer;
+	
+	public void SetMusicLvl(float musicLvl)
 	{
-		//
+		masterMixer.SetFloat ("musicVol", musicLvl);
+		AudioMainManager.musicSliderValue = musicLvl;
 	}
 
-	public void Change (int newVolume) 
+	public void SetEffectsLvl(float soundEffectsLvl)
 	{
-		volume = newVolume;
+		masterMixer.SetFloat ("soundEffectsVolume", soundEffectsLvl);
+		AudioMainManager.sfxSliderValue = soundEffectsLvl;
+		GameObject.Find ("rollover_1").GetComponent<AudioSource>().Play ();
 	}
 }

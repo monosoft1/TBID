@@ -27,6 +27,11 @@ TagManager:
   - Check1
   - Check2
   - Check3
+  - Score
+  - Deaths
+  - ScorePlatform
+  - EndPlatform
+  - BGMusic
   layers:
   - Default
   - TransparentFX

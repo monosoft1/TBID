@@ -2,6 +2,7 @@
 using System.Collections;
 using System;
 using System.Runtime.Serialization.Formatters.Binary;
+//using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
 
@@ -18,6 +19,9 @@ public class GameController : MonoBehaviour {
 
 	public Material ballMaterial;
 	public Material ballDefault;
+
+	public AudioSource BGMusic;
+
 
 	// Use this for initialization
 	void Awake () 
@@ -54,12 +58,22 @@ public class GameController : MonoBehaviour {
 			{
 				shouldStoreData = true;
 			}
+
 			//playerPosition = new Vector3 (GameObject.FindGameObjectWithTag ("StartingPlatform").transform.position.x, GameObject.FindGameObjectWithTag ("StartingPlatform").transform.position.y + 5, GameObject.FindGameObjectWithTag ("StartingPlatform").transform.position.z);
 			//playerDPosition = new Vector3 (GameObject.FindGameObjectWithTag ("StartingPlatform").transform.position.x, GameObject.FindGameObjectWithTag ("StartingPlatform").transform.position.y + 5, GameObject.FindGameObjectWithTag ("StartingPlatform").transform.position.z);
 		} 
 		else if (control != this) 
 		{
 			Destroy(gameObject);
+		}
+	}
+
+	void Start()
+	{
+		if(GameObject.FindGameObjectWithTag("BGMusic").activeSelf && BGMusic == null)
+		{
+			BGMusic = GameObject.FindGameObjectWithTag ("BGMusic").GetComponent<AudioSource>();
+			BGMusic.Play ();
 		}
 	}
 
@@ -95,8 +109,17 @@ public class GameController : MonoBehaviour {
 			playerPosition.x = player.transform.position.x;
 			playerPosition.y = player.transform.position.y;
 			playerPosition.z = player.transform.position.z;
+
+			if(GameObject.FindGameObjectWithTag("BGMusic").activeSelf && BGMusic == null)
+			{
+				BGMusic = GameObject.FindGameObjectWithTag ("BGMusic").GetComponent<AudioSource>();
+			}
+			DeathManager.deathVal = PlayerPrefs.GetInt ("Deaths");
+			DeathManager.deathText.text = DeathManager.deathVal.ToString ();
 			//player.GetComponent<Renderer>().material = ballMaterial;
 		}
+
+
 
 	}
 
