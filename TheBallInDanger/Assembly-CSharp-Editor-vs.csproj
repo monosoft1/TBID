@@ -51,6 +51,7 @@
      <None Include="Assets\UniityStuffs\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\UniityStuffs\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
      <None Include="Assets\UniityStuffs\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+     <None Include="Assets\dreamlo\README_FIRST.txt" />
      <None Include="Assets\UniityStuffs\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ShowAlphaChannel.shader" />
      <None Include="Assets\UniityStuffs\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowConeTap.shader" />
      <None Include="Assets\UniityStuffs\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SunShaftsComposite.shader" />
@@ -71,9 +72,11 @@
      <None Include="Assets\UniityStuffs\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ContrastComposite.shader" />
      <None Include="Assets\UniityStuffs\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAAPreset3.shader" />
      <None Include="Assets\UniityStuffs\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\FisheyeShader.shader" />
+     <None Include="Assets\Plugins\Photon3Unity3D.xml" />
      <None Include="Assets\UniityStuffs\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Apply.shader" />
      <None Include="Assets\UniityStuffs\Standard Assets\Skyboxes\_skybox info.txt" />
      <None Include="Assets\UniityStuffs\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\frag_ao.cginc" />
+     <None Include="Assets\Plugins\release_history.txt" />
      <None Include="Assets\ColorPicker\license.txt" />
      <None Include="Assets\UniityStuffs\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfField34.shader" />
      <None Include="Assets\ColourPicker\VertexColours.shader" />
@@ -144,6 +147,15 @@
  </Reference>
  <Reference Include="AssetStoreToolsExtra">
  <HintPath>K:/Hamza/GitHub/TBID/TheBallInDanger/Assets/AssetStoreTools/Editor/AssetStoreToolsExtra.dll</HintPath>
+ </Reference>
+ <Reference Include="Photon3Unity3D">
+ <HintPath>K:/Hamza/GitHub/TBID/TheBallInDanger/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+ </Reference>
+ <Reference Include="PlayMaker">
+ <HintPath>K:/Hamza/GitHub/TBID/TheBallInDanger/Assets/Plugins/PlayMaker/PlayMaker.dll</HintPath>
+ </Reference>
+ <Reference Include="websocket-sharp">
+ <HintPath>K:/Hamza/GitHub/TBID/TheBallInDanger/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>

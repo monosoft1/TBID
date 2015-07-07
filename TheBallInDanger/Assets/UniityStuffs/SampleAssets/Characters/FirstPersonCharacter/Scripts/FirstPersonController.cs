@@ -40,7 +40,7 @@ namespace UnitySampleAssets.Characters.FirstPerson
 		///////////////// non exposed privates /////////////////////////
 		private Camera _camera;
 		private bool _jump;
-//		private float _yRotation;
+		private float _yRotation;
 		private CameraRefocus _cameraRefocus;
 		private Vector2 _input;
 		private Vector3 _moveDir = Vector3.zero;
@@ -247,7 +247,7 @@ namespace UnitySampleAssets.Characters.FirstPerson
 			#endif
 			// handle the roation round the x axis on the camera
 			
-//			_yRotation = mouseInput.y;
+			_yRotation = mouseInput.y;
 			_cameraRefocus.GetFocusPoint();
 		}
 		

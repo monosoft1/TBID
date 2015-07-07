@@ -1,12 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Manager\GameOverScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Manager\LeaderboardManager.cs">
     <Files>
-      <File FileName="C:\Users\Badar\Documents\Unity\Htub\HTub\Assets\HTub\Scripts\Gun\Player_Shoot.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\UI\Score\ScoreManager.cs" Line="33" Column="3" />
-      <File FileName="Assets\Scripts\UI\Death\DeathManager.cs" Line="7" Column="36" />
-      <File FileName="Assets\Scripts\Manager\GameOverScript.cs" Line="50" Column="50" />
-      <File FileName="Assets\Scripts\Manager\GameController.cs" Line="118" Column="1" />
+      <File FileName="C:\Users\Badar\Documents\Unity\Htub\HTub\Assets\HTub\Scripts\Gun\Player_Shoot.cs" Line="161" Column="38" />
+      <File FileName="Assets\Scripts\UI\GamePause\MainMenu\MainMenOnclick.cs" Line="10" Column="39" />
+      <File FileName="Assets\Scripts\UI\Gradient\GradientEffect.cs" Line="11" Column="41" />
+      <File FileName="Assets\Scripts\Manager\LeaderboardManager.cs" Line="55" Column="45" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

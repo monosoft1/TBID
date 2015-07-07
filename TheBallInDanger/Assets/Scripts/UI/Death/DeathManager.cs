@@ -13,11 +13,11 @@ public class DeathManager : MonoBehaviour {
 	void Start () 
 	{
 		deathText = GameObject.FindGameObjectWithTag("Deaths").GetComponent<Text>();
-		deathVal = 0;
+		//deathVal = 0;
 	}
 
-	void OnCollisionEnter (Collision col)
+	void Update()
 	{
-		deathValT = ScoreManager.scoreVal;
+		deathValT = DeathManager.deathVal;
 	}
 }

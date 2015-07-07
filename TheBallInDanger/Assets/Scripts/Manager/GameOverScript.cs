@@ -33,9 +33,13 @@ public class GameOverScript : MonoBehaviour {
 	
 	void Update()
 	{
-		if (shouldDie == true && player.transform.position.y <= GameObject.FindGameObjectWithTag ("StartingPlatform").transform.position.y - 8) 
+		if(GameObject.FindGameObjectWithTag ("GameMManager"))
 		{
-		   StartCoroutine (Doer ());
+			if (shouldDie == true && player.transform.position.y <= GameObject.FindGameObjectWithTag ("StartingPlatform").transform.position.y - 8) 
+			{
+				StartCoroutine (Doer ());
+
+			}
 		}
 	}
 
@@ -45,13 +49,13 @@ public class GameOverScript : MonoBehaviour {
 		loseSound.Play ();
 		Initiate.Fade (GameController.control.nextLevel, mycolor, 0.8f);
 		yield return null;
+		PlayerPrefs.SetInt ("Deaths", DeathManager.deathVal);
 		Destroy (gameFManager);
 		DeathManager.deathVal ++;
 		if(GameObject.FindGameObjectWithTag ("Deaths"))
 		{
 			DeathManager.deathText.text = DeathManager.deathVal.ToString();
 		}
-		PlayerPrefs.SetInt ("Deaths", DeathManager.deathVal);
 		shouldDie = false;
 	}
 

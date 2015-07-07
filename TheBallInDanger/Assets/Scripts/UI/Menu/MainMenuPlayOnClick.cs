@@ -11,6 +11,15 @@ public class MainMenuPlayOnClick : MonoBehaviour {
 
 	IEnumerator PlayMusic()
 	{
+		if(PlayerPrefs.GetInt ("Deaths") >= 1 && GameController.onceEntered == false)
+		{
+			PlayerPrefs.SetInt ("Deaths", 0);
+			GameController.onceEntered = true;
+		}
+		if(GameController.onceEntered == false && PlayerPrefs.GetInt ("Deaths") <= 0)
+		{
+
+		}
 		Initiate.Fade(GameController.control.nextLevel,Color.black,0.7f);
 		GameObject.FindGameObjectWithTag ("GameMManager").SetActive (true);
 		GameObject.FindGameObjectWithTag ("Player").transform.parent = GameObject.FindGameObjectWithTag ("GameMManager").transform;

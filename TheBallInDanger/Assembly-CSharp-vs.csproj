@@ -62,6 +62,10 @@
      <Compile Include="Assets\Scripts\Camera\Music.cs" />
      <Compile Include="Assets\Scripts\Faders\AutoFade.cs" />
      <Compile Include="Assets\Scripts\Faders\Fader.cs" />
+     <Compile Include="Assets\Scripts\JoyStick\CrossPlatformInputManager.cs" />
+     <Compile Include="Assets\Scripts\JoyStick\JoyStickControl.cs" />
+     <Compile Include="Assets\Scripts\JoyStick\PointerDown.cs" />
+     <Compile Include="Assets\Scripts\JoyStick\PointerUp.cs" />
      <Compile Include="Assets\Scripts\Manager\DontVanish.cs" />
      <Compile Include="Assets\Scripts\Manager\EManager.cs" />
      <Compile Include="Assets\Scripts\Manager\ExtraStuffChecker.cs" />
@@ -69,6 +73,7 @@
      <Compile Include="Assets\Scripts\Manager\GameController.cs" />
      <Compile Include="Assets\Scripts\Manager\GameOverScript.cs" />
      <Compile Include="Assets\Scripts\Manager\Initiate.cs" />
+     <Compile Include="Assets\Scripts\Manager\LeaderboardManager.cs" />
      <Compile Include="Assets\Scripts\Manager\PlayerMaterialController.cs" />
      <Compile Include="Assets\Scripts\Platform\NextLevel.cs" />
      <Compile Include="Assets\Scripts\Player\Ball.cs" />
@@ -84,10 +89,7 @@
      <Compile Include="Assets\Scripts\UI\GamePause\MainMenu\LoadMainMenu.cs" />
      <Compile Include="Assets\Scripts\UI\GamePause\MainMenu\MainMenOnclick.cs" />
      <Compile Include="Assets\Scripts\UI\GamePause\PauseScreen.cs" />
-     <Compile Include="Assets\Scripts\UI\JoyStick\CrossPlatformInputManager.cs" />
-     <Compile Include="Assets\Scripts\UI\JoyStick\JoyStickControl.cs" />
-     <Compile Include="Assets\Scripts\UI\JoyStick\PointerDown.cs" />
-     <Compile Include="Assets\Scripts\UI\JoyStick\PointerUp.cs" />
+     <Compile Include="Assets\Scripts\UI\Gradient\GradientEffect.cs" />
      <Compile Include="Assets\Scripts\UI\Menu\MainMenuPlayOnClick.cs" />
      <Compile Include="Assets\Scripts\UI\Menu\OnClick.cs" />
      <Compile Include="Assets\Scripts\UI\Menu\Quiting.cs" />
@@ -97,10 +99,6 @@
      <Compile Include="Assets\Scripts\UI\TextManagers\lvltxtManager.cs" />
      <Compile Include="Assets\Scripts\UI\Volume\AudioImageChange.cs" />
      <Compile Include="Assets\Scripts\UI\Volume\VolumeAdjust.cs" />
-     <Compile Include="Assets\Touch Screen Slider\Assets\Scripts\Button.cs" />
-     <Compile Include="Assets\Touch Screen Slider\Assets\Scripts\MusicManager.cs" />
-     <Compile Include="Assets\Touch Screen Slider\Assets\Scripts\Slider.cs" />
-     <Compile Include="Assets\Touch Screen Slider\Assets\Scripts\TouchInput.cs" />
      <Compile Include="Assets\UniityStuffs\SampleAssets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
      <Compile Include="Assets\UniityStuffs\SampleAssets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" />
      <Compile Include="Assets\UniityStuffs\SampleAssets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs" />
@@ -151,9 +149,13 @@
      <Compile Include="Assets\UniityStuffs\Standard Assets\Image Effects (Pro Only)\SepiaToneEffect.cs" />
      <Compile Include="Assets\UniityStuffs\Standard Assets\Image Effects (Pro Only)\TwirlEffect.cs" />
      <Compile Include="Assets\UniityStuffs\Standard Assets\Image Effects (Pro Only)\VortexEffect.cs" />
+     <Compile Include="Assets\dreamlo\LeaderBoardSample.cs" />
+     <Compile Include="Assets\dreamlo\dreamloLeaderBoard.cs" />
+     <Compile Include="Assets\dreamlo\dreamloPromoCode.cs" />
      <None Include="Assets\UniityStuffs\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\UniityStuffs\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
      <None Include="Assets\UniityStuffs\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
+     <None Include="Assets\dreamlo\README_FIRST.txt" />
      <None Include="Assets\UniityStuffs\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ShowAlphaChannel.shader" />
      <None Include="Assets\UniityStuffs\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowConeTap.shader" />
      <None Include="Assets\UniityStuffs\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SunShaftsComposite.shader" />
@@ -174,9 +176,11 @@
      <None Include="Assets\UniityStuffs\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ContrastComposite.shader" />
      <None Include="Assets\UniityStuffs\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAAPreset3.shader" />
      <None Include="Assets\UniityStuffs\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\FisheyeShader.shader" />
+     <None Include="Assets\Plugins\Photon3Unity3D.xml" />
      <None Include="Assets\UniityStuffs\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\Contrast Stretch\Apply.shader" />
      <None Include="Assets\UniityStuffs\Standard Assets\Skyboxes\_skybox info.txt" />
      <None Include="Assets\UniityStuffs\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\frag_ao.cginc" />
+     <None Include="Assets\Plugins\release_history.txt" />
      <None Include="Assets\ColorPicker\license.txt" />
      <None Include="Assets\UniityStuffs\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\DepthOfField34.shader" />
      <None Include="Assets\ColourPicker\VertexColours.shader" />
@@ -232,6 +236,15 @@
  </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="Photon3Unity3D">
+ <HintPath>K:/Hamza/GitHub/TBID/TheBallInDanger/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+ </Reference>
+ <Reference Include="PlayMaker">
+ <HintPath>K:/Hamza/GitHub/TBID/TheBallInDanger/Assets/Plugins/PlayMaker/PlayMaker.dll</HintPath>
+ </Reference>
+ <Reference Include="websocket-sharp">
+ <HintPath>K:/Hamza/GitHub/TBID/TheBallInDanger/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

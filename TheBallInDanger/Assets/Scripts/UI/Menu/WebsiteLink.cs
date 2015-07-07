@@ -8,16 +8,11 @@ public class WebsiteLink : MonoBehaviour {
 	{
 		if (gameObject.transform.parent.tag == "LinkUI") 
 		{
-			Application.OpenURL("http://hamza-abdullah.tk/forums/");
+			Application.OpenURL("http://hamza-abdullah.tk");
 		}
-		else if (gameObject.transform.parent.tag == "EmailUI") 
+		if (gameObject.transform.parent.tag == "EmailUI") 
 		{
 			Application.OpenURL("mailto:support@hamza-abdullah.tk");
 		}
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 }

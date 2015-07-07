@@ -2,7 +2,7 @@
 using System.Collections;
 using System;
 using System.Runtime.Serialization.Formatters.Binary;
-//using UnityEngine.UI;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
 
@@ -22,6 +22,8 @@ public class GameController : MonoBehaviour {
 
 	public AudioSource BGMusic;
 
+	public static bool onceEntered = false;
+	[SerializeField]bool onceEnteredStatus;
 
 	// Use this for initialization
 	void Awake () 
@@ -75,36 +77,44 @@ public class GameController : MonoBehaviour {
 			BGMusic = GameObject.FindGameObjectWithTag ("BGMusic").GetComponent<AudioSource>();
 			BGMusic.Play ();
 		}
+
 	}
 
 	void Update()
 	{
 		if (Application.loadedLevelName == "MainMenu") 
 		{
+			onceEnteredStatus = GameController.onceEntered;
 			shouldStoreData = false;
 		} 
-		else if (Application.loadedLevelName == "PlayerSettings") 
+		else if (Application.loadedLevelName == "PlayerSettings")
 		{
+			onceEnteredStatus = GameController.onceEntered;
 			shouldStoreData = false;
 		} 
 		else if (Application.loadedLevelName == "Settings") 
 		{
+			onceEnteredStatus = GameController.onceEntered;
 			shouldStoreData = false;
 		} 
 		else if (Application.loadedLevelName == "Help") 
 		{
+			onceEnteredStatus = GameController.onceEntered;
 			shouldStoreData = false;
 		} 
 		else if (Application.loadedLevelName == "AudioSettings") 
 		{
+			onceEnteredStatus = GameController.onceEntered;
 			shouldStoreData = false;
 		} 
 		else 
 		{
+			onceEnteredStatus = GameController.onceEntered;
 			shouldStoreData = true;
 		}
 		if(shouldStoreData == true)
 		{
+			onceEnteredStatus = GameController.onceEntered;
 			nextLevel = Application.loadedLevelName;
 			playerPosition.x = player.transform.position.x;
 			playerPosition.y = player.transform.position.y;
